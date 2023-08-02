@@ -13,11 +13,11 @@ $.ajax({
     let author = data[0].author;
     let quote = data[0].quote;
     console.log(author);
-    let finale = '<figure class="text-center">' +
+    let final = '<figure class="text-center mt-5">' +
         '<blockquote class="blockquote" id="quote">' +
         '<p class="display-3">"' + quote + '"</p>' +
         '</blockquote>' +
         '<figcaption class="blockquote-footer" id="caption">' + author + '</figcaption>' +
         '</figure>';
-    $('#quote').html(finale);
+    $('#quote').html(final);
 });
