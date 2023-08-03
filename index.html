@@ -198,7 +198,7 @@
         <input type="text" name="_honey" style="display: none">
         <input type="hidden" name="_captcha" value="false">
         <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
+          <label for="email" class="form-label">Your Email address</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="yourEmailHere@example.com" required>
         </div>
         <div class="mb-3">
@@ -210,9 +210,13 @@
           <textarea class="form-control" id="text" rows="3" name="content" required></textarea>
         </div>
         <div class="text-center">
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-primary" type="submit" data-open-modal>Submit</button>
         </div>
       </form>
+      <dialog data-modal>
+        <div>Email has been sent, thank you for your time!</div>
+        <button data-close-modaal>No problem</button>
+      </dialog>
     </div>
   </section>
 </main>
